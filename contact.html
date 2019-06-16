@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <link rel="stylesheet" href="css/email.css" />
+
+
+
+    <title>Contact</title>
+  </head>
+  <body class="contact">
+    <div class="container-fluid">
+      <header>
+        <nav class="nav nav-masthead justify-content-end col-md-3">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link ">About Me</a>
+          <a href="portfolio.html" class="nav-link ">Portfolio</a>
+          <a href="https://twitter.com/JanWaider" class="nav-link ">Blog</a>
+          <a href="#" class="nav-link active">Contact</a>
+        </nav>
+      </header>
+      <main id="work">
+        <h1 class="lg-heading">
+          Reach Me
+        </h1>
+      </main>
+      <div class="container">
+        <div class="wrapper animated bounceInLeft">
+          <div class="contact">
+            <form
+              class="gform pure-form pure-form-stacked"
+              method="POST"
+              data-email="example@email.net"
+              action="https://script.google.com/macros/s/AKfycby6yR35RdN-uDnayKIvMvt3YXJOtKUjEeVHAxQv/exec"
+            >
+              <!-- change the form action to your script url -->
+
+              <div class="form-elements">
+                <p>
+                  <label for="name">Name: </label>
+                  <input
+                    id="name"
+                    name="name"
+                    placeholder="What's your name"
+                  />
+                </p>
+                  <p>
+                    <label for="message">Message: </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="3"
+                    placeholder="Tell me what's on your mind..."
+                  ></textarea>
+                  </p>
+                <p>
+                  <label for="email"><em>Your</em> Email Address:</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value=""
+                    required
+                    placeholder="your.name@email.com"
+                  />
+                  <span class="email-invalid" style="display:none">
+                    Must be a valid email address</span
+                  >
+                </p>
+                <button class="btn btn-block mt-3">Send</button>
+              </div>
+
+              <!-- Customise the Thankyou Message People See when they submit the form: -->
+              <div class="thankyou_message" style="display:none;">
+                <h2>
+                  <em>Thanks</em> for contacting me! I will get back to you
+                  soon!
+                </h2>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2123.4970718550144!2d10.400025659409428!3d63.43288078998584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319eab6161a7%3A0xe24900a9118439c5!2zS3JhbWJ1Z2F0YSAzLCA3MDExIFRyb25kaGVpbSwg0J3QvtGA0LLQtdCz0LjRjw!5e1!3m2!1sru!2sus!4v1560628734335!5m2!1sru!2sus" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <footer id="main-footer">
+      <script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("01", "02", "03", "04", "05", "06",
+"07", "08", "09", "10", "11", "12");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time =day + "." + month[month_num] + "." + d.getFullYear() +
+"&nbsp;&nbsp;&nbsp;Time - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+document.layers.doc_time.document.write(date_time);
+document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+setTimeout("clock()", 1000);
+}
+</script>
+<span id="doc_time"></span>
+<script type="text/javascript">
+clock();
+</script>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="form-submission-handler.js"
+    ></script>
+    <!-- END -->
+  </body>
+</html>
